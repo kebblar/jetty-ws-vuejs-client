@@ -1,0 +1,59 @@
+echo "parte 1 **************************************"
+echo "Creando y guardando la Imagen Docker (esto se hace una sola vez)"
+> mkdir store
+> cd store
+> nano run.sh
+  cd /home/ubuntu/store
+  npm run dev
+  
+> nano Dockerfile
+  FROM ubuntu
+  RUN apt-get update
+  RUN apt-get install -y curl
+  RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+  RUN apt-get install -y nodejs
+  ADD structure.tar.gz /
+  COPY run.sh /
+
+echo "asegurar que se tiene un directorio asi **********************"
+store
+  Dockerfile
+  frontend.tar.gz
+  run.sh
+  structure.tar.gz
+  ws.jar
+  
+    
+
+docker build . -t kebblar/vuejs-7
+docker login
+docker push kebblar/vuejs-7
+echo "Imagen creada y guardada. **********************"
+
+scp -r -i llave.pem store ubuntu@1.2.3.4:/home/ubuntu
+ssh -i llave.pem ubuntu@1.2.3.4
+echo "Fin de la primer parte del lado del cliente **********************************"
+
+    
+    0  echo "Ya dentro de nuestra máquina AWS"
+    1  sudo sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' >> /etc/environment"
+    2  sudo apt-get update
+    3  sudo apt-get install -y nano    
+    4  wget -qO- https://get.docker.com/ | sh
+    5  sudo gpasswd -a ${USER} docker
+    6  exit
+    7  ssh -i llave.pem ubuntu@1.2.3.4
+    8  docker info
+    9  cd store   
+   10  tar xzvf frontend.tar.gz 
+   11  echo "parte 2 ************************"
+   
+       docker run -it -p 8080:8080 -v /home/ubuntu/service:/service gustavoarellano/jdk18 java -jar /service/ws.jar
+   13  docker run -d  -p 8080:8080 -v /home/ubuntu/service:/service gustavoarellano/jdk18 java -jar /service/ws.jar
+   
+       docker run -it -p 7777:8080 -v /home/ubuntu/frontend/src:/frontend/src kebblar/vuejs-5 bash
+   15  docker run -d  -p 7777:8080 -v /home/ubuntu/frontend/src:/frontend/src kebblar/vuejs-5 bash /run.sh
+   
+   
+   
+   
