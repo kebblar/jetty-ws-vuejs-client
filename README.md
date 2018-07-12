@@ -4,4 +4,4 @@
 <p>Then, in just ONE line, execute:</p>
 <p>docker run -d -p 7777:8080 <br/>
 -v /home/ubuntu/jetty-ws-vuejs-client/frontend:/structure/src kebblar/vuejs-hello bash /run.sh</p>
-<p>Just take case about the path: /home/ubuntu because in your environment it could be different !!!!!</p>
+<p>Just take care about the path: <b>/home/ubuntu</b> because in your environment it could be different !!!!!</p>
