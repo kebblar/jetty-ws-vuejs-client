@@ -2,7 +2,7 @@
 <h2>Use this example in this way:</h2>
 
 <ul>
-<li>go to your server: ssh -i key.pem ubuntu@1.2.3.4</li>
+<li>Go to your "brand new" and CLEAN server: ssh -i key.pem ubuntu@1.2.3.4</li>
 <li>sudo sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' >> /etc/environment"</li>
 <li>sudo apt-get update</li>
 <li>wget -qO- https://get.docker.com/ | sh</li>
