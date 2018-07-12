@@ -1,6 +1,17 @@
 <h1>Full vuejs REST example</h1>
 <h2>Use this example in this way:</h2>
-<p>git clone https://github.com/kebblar/jetty-ws-vuejs-client.git</p>
+
+<ul>
+<li>go to your server: ssh -i key.pem ubuntu@1.2.3.4</li>
+<li>sudo sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' >> /etc/environment"</li>
+<li>sudo apt-get update</li>
+<li>wget -qO- https://get.docker.com/ | sh</li>
+<li>sudo gpasswd -a ${USER} docker</li>
+<li>exit</li>
+<li>go again to your server and do:</li>
+<li>git clone https://github.com/kebblar/jetty-ws-vuejs-client.git</li>
+</ul>
+
 <p>Then, in just ONE line, execute:</p>
 <p style="color:#FF0000;">docker run -d -p 7777:8080 <br/>
 -v /home/ubuntu/jetty-ws-vuejs-client/frontend:/structure/src kebblar/vuejs-hello bash /run.sh</p>
