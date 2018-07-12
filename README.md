@@ -1,4 +1,3 @@
-# jetty-ws-vuejs-client
 <h1>Full vuejs websocket example</h1>
 <h2>Use this example in this way:</h2>
 <p>git clone https://github.com/kebblar/jetty-ws-vuejs-client.git</p>
