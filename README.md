@@ -1,4 +1,7 @@
 <h1>Full vuejs REST example</h1>
+
+[![dockeri.co](https://dockeri.co/image/kebblar/count-factorial)](https://hub.docker.com/r/kebblar/count-factorial)
+
 <h2>Use this example in this way:</h2>
 
 <ul>
